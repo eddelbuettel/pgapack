@@ -1,4 +1,0 @@
-autoreconf configure.ac
-automake --add-missing --copy
-./configure --prefix ~/Source/pgapack/install
-make
