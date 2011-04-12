@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_INIT([PGAPACK_SBSINUMERIC], [1.0], [BUG-REPORT-ADDRESS])
+AC_INIT([PGAPACK], [1.1], [BUG-REPORT-ADDRESS])
 AC_CONFIG_AUX_DIR(config)
 AM_INIT_AUTOMAKE
 

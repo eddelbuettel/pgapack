@@ -1,10 +1,12 @@
 #!/bin/sh
 
-autoreconf configure.ac
-automake --add-missing --copy
-if [ $# -gt 0 ] ; then
-  ./configure --prefix $1
-else
-./configure
+set -x
+if [ ! -d config ]; then
+    mkdir config
 fi
-make
+
+aclocal -I config
+autoheader
+automake --add-missing --copy
+autoconf
+
